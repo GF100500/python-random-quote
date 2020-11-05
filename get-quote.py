@@ -7,9 +7,10 @@ def main():
   quotes = f.readlines()
   f.close()
 
-  last = 13
+  last = 16
   rnd = random.randint(0, last)
-  print(quotes[rnd])
+  rnd1 = random.randint(0, last-rnd)
+  print(quotes[rnd], end=quotes[rnd1])
 
 if __name__== "__main__":
   main()
